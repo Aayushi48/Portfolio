@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
        3. SCROLL REVEAL ANIMATION (IntersectionObserver)
     ------------------------------------------------------- */
     const revealElements = document.querySelectorAll(
-        '.timeline-item, .case-study-card, .highlight-card, .skill-card, .project-card, .education-card, .recognition-card'
+        '.timeline-item, .case-study-card, .skill-card, .about-edu-card'
     );
 
     const revealObserver = new IntersectionObserver((entries) => {
@@ -178,14 +178,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* -------------------------------------------------------
-       8. HIGHLIGHT CARD tilt effect on mouse move
+       8. CARD TILT EFFECT on mouse move
     ------------------------------------------------------- */
-    document.querySelectorAll('.highlight-card, .project-card, .skill-card').forEach(card => {
+    document.querySelectorAll('.skill-card, .about-edu-card, .modal-project-card').forEach(card => {
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
             const x = (e.clientX - rect.left) / rect.width  - 0.5;
             const y = (e.clientY - rect.top)  / rect.height - 0.5;
-            card.style.transform = `translateY(-8px) perspective(600px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg)`;
+            card.style.transform = `translateY(-6px) perspective(600px) rotateY(${x * 5}deg) rotateX(${-y * 5}deg)`;
         });
 
         card.addEventListener('mouseleave', () => {
@@ -245,6 +245,51 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
+    });
+
+    /* -------------------------------------------------------
+       10. SELECTED PROJECTS MODAL POPUP
+    ------------------------------------------------------- */
+    const openModalBtn  = document.getElementById('btn-open-projects-modal');
+    const closeModalBtn = document.getElementById('btn-close-projects-modal');
+    const projectsModal = document.getElementById('projects-modal');
+
+    const openModal = () => {
+        if (projectsModal) {
+            projectsModal.classList.add('active');
+            projectsModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+    };
+
+    const closeModal = () => {
+        if (projectsModal) {
+            projectsModal.classList.remove('active');
+            projectsModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+    };
+
+    if (openModalBtn) {
+        openModalBtn.addEventListener('click', openModal);
+    }
+
+    if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', closeModal);
+    }
+
+    if (projectsModal) {
+        projectsModal.addEventListener('click', (e) => {
+            if (e.target === projectsModal) {
+                closeModal();
+            }
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && projectsModal && projectsModal.classList.contains('active')) {
+            closeModal();
+        }
     });
 
 });
