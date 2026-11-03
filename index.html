@@ -26,7 +26,7 @@
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
+                <li><a href="case-studies.html" target="_blank" rel="noopener noreferrer" class="nav-link">Case Studies <i class="fas fa-external-link-alt" style="font-size:0.7rem;margin-left:3px;opacity:0.8;"></i></a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -63,9 +63,9 @@
             <!--<p class="hero-description">Feel free to reach out to discuss my product development case studies and
                 experience.</p>-->
             <div class="hero-buttons">
-                <a href="#case-studies" class="btn btn-primary" id="btn-view-case-studies">
+                <a href="case-studies.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-view-case-studies">
                     <span>Featured Case Studies</span>
-                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-external-link-alt" style="font-size:0.85rem;margin-left:4px;"></i>
                 </a>
                 <a href="#experience" class="btn btn-secondary" id="btn-view-experience">
                     <span>View Experience</span>
@@ -357,476 +357,124 @@
         </div>
     </section>
 
-    <!-- Featured Case Studies Section -->
-    <section id="case-studies" class="case-studies">
+    <!-- Featured Case Studies Preview Section -->
+    <section id="case-studies" class="case-preview">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Featured Work</span>
                 <h2 class="section-title">Product &amp; Clinical Case Studies</h2>
-                <p class="section-subtitle">Real-world case studies demonstrating healthcare product management,
-                    clinical genomics workflow optimization, and AI literature intelligence.</p>
+                <p class="section-subtitle">Real-world case studies in clinical genomics workflow redesign, genomic data visualization, biomedical NLP, and ACMG variant curation. Click any case study to explore the complete deep dive on a dedicated page.</p>
             </div>
 
-            <!-- Category Filter Tabs -->
-            <div class="case-filter-tabs">
-                <button class="filter-tab active" data-filter="all">All Case Studies (4)</button>
-                <button class="filter-tab" data-filter="workflow">Workflow &amp; Collaboration</button>
-                <button class="filter-tab" data-filter="optimization">Genomics &amp; Visualization</button>
-                <button class="filter-tab" data-filter="nlp">Healthcare AI &amp; NLP</button>
-                <button class="filter-tab" data-filter="automation">Variant Automation</button>
+            <div class="preview-grid">
+                <!-- Preview Card 1 -->
+                <div class="preview-card">
+                    <div class="preview-card-header">
+                        <span class="preview-card-num">CASE STUDY 01</span>
+                        <span class="preview-card-company"><i class="fas fa-building"></i> 1Cell.Ai</span>
+                    </div>
+                    <h3 class="preview-card-title">LIMS &amp; Workflow Collaboration Tool</h3>
+                    <p class="preview-card-subtitle">Streamlining End-to-End Precision Oncology Testing Workflow</p>
+                    <p class="preview-card-desc">Redesigned multi-team handoffs across sample intake, wet lab accessioning, NGS bioinformatics, and clinical reporting, cutting turnaround time by 40%.</p>
+                    <div class="preview-card-impact">
+                        <div class="impact-pill"><i class="fas fa-tachometer-alt"></i> 40% TAT Reduction</div>
+                        <div class="impact-pill"><i class="fas fa-check-circle"></i> Audit-Ready QC</div>
+                    </div>
+                    <div class="preview-card-tags">
+                        <span class="tag">Product Management</span>
+                        <span class="tag">Workflow Redesign</span>
+                        <span class="tag">LIMS</span>
+                    </div>
+                    <a href="case-studies.html#case-1" target="_blank" rel="noopener noreferrer" class="preview-card-btn">
+                        <span>Read Case Study</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Preview Card 2 -->
+                <div class="preview-card">
+                    <div class="preview-card-header">
+                        <span class="preview-card-num">CASE STUDY 02</span>
+                        <span class="preview-card-company"><i class="fas fa-building"></i> Strand Life Sciences</span>
+                    </div>
+                    <h3 class="preview-card-title">Fusion Detection Visualization &amp; QC Tool</h3>
+                    <p class="preview-card-subtitle">Interactive Quality Control &amp; Analysis for Complex Genomic Rearrangements</p>
+                    <p class="preview-card-desc">Engineered interactive visual inspection tools for split reads, discordant pairs, and breakpoint evidence, accelerating fusion analysis by 30%.</p>
+                    <div class="preview-card-impact">
+                        <div class="impact-pill"><i class="fas fa-tachometer-alt"></i> 30% Faster Review</div>
+                        <div class="impact-pill"><i class="fas fa-eye"></i> Breakpoint Viz</div>
+                    </div>
+                    <div class="preview-card-tags">
+                        <span class="tag">Data Visualization</span>
+                        <span class="tag">Clinical QC</span>
+                        <span class="tag">Bioinformatics</span>
+                    </div>
+                    <a href="case-studies.html#case-2" target="_blank" rel="noopener noreferrer" class="preview-card-btn">
+                        <span>Read Case Study</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Preview Card 3 -->
+                <div class="preview-card">
+                    <div class="preview-card-header">
+                        <span class="preview-card-num">CASE STUDY 03</span>
+                        <span class="preview-card-company"><i class="fas fa-building"></i> Strand Life Sciences</span>
+                    </div>
+                    <h3 class="preview-card-title">Literature Mining &amp; NLP for Variant Evidence</h3>
+                    <p class="preview-card-subtitle">Accelerating Biomedical Evidence Extraction with NLP &amp; Machine Learning</p>
+                    <p class="preview-card-desc">Deployed PubMed text extraction, gene/variant NER, and evidence triage, slashing manual literature curation time by 60%.</p>
+                    <div class="preview-card-impact">
+                        <div class="impact-pill"><i class="fas fa-tachometer-alt"></i> 60% Faster Curation</div>
+                        <div class="impact-pill"><i class="fas fa-brain"></i> PubMed NER &amp; NLP</div>
+                    </div>
+                    <div class="preview-card-tags">
+                        <span class="tag">Biomedical NLP</span>
+                        <span class="tag">AI / ML</span>
+                        <span class="tag">Literature Mining</span>
+                    </div>
+                    <a href="case-studies.html#case-3" target="_blank" rel="noopener noreferrer" class="preview-card-btn">
+                        <span>Read Case Study</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Preview Card 4 -->
+                <div class="preview-card">
+                    <div class="preview-card-header">
+                        <span class="preview-card-num">CASE STUDY 04</span>
+                        <span class="preview-card-company"><i class="fas fa-building"></i> Strand Life Sciences</span>
+                    </div>
+                    <h3 class="preview-card-title">Automated Variant Classification Engine</h3>
+                    <p class="preview-card-subtitle">ACMG/AMP Compliant Rules Engine for Precision Genomics Interpretation</p>
+                    <p class="preview-card-desc">Engineered an ACMG-standardized rules engine aggregating population frequency, in silico predictors, and clinical databases for automated scoring.</p>
+                    <div class="preview-card-impact">
+                        <div class="impact-pill"><i class="fas fa-tachometer-alt"></i> 50% Speed Improvement</div>
+                        <div class="impact-pill"><i class="fas fa-check-circle"></i> ACMG/AMP Standard</div>
+                    </div>
+                    <div class="preview-card-tags">
+                        <span class="tag">ACMG Rules Engine</span>
+                        <span class="tag">Genomic Curation</span>
+                        <span class="tag">Clinical Genomics</span>
+                    </div>
+                    <a href="case-studies.html#case-4" target="_blank" rel="noopener noreferrer" class="preview-card-btn">
+                        <span>Read Case Study</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class="case-studies-container">
-
-                <!-- Case Study 01 -->
-                <article class="case-study-card" data-category="workflow">
-                    <div class="case-meta-top">
-                        <span class="case-number">Case Study 01</span>
-                        <div class="case-badges">
-                            <span class="case-company-badge"><i class="fas fa-building"></i> 1Cell.Ai</span>
-                            <span class="case-category-badge"><i class="fas fa-comments"></i> Workflow Management</span>
-                        </div>
+            <!-- Bottom CTA to dedicated page -->
+            <div class="preview-cta-wrap">
+                <div class="preview-cta-card">
+                    <div class="preview-cta-text">
+                        <h3>Looking for the complete in-depth technical breakdowns?</h3>
+                        <p>Explore all 4 detailed case studies with methodology steps, business impact, interactive deep dives, and Notion links on the dedicated page.</p>
                     </div>
-
-                    <h3 class="case-title">Workflow Management &amp; Contextual Collaboration</h3>
-                    <p class="case-tagline">Designing a centralized, sample-specific communication experience for an
-                        integrated multi-omics platform connected with LIMS.</p>
-
-                    <div class="case-role-bar">
-                        <span class="role-label"><i class="fas fa-user-check"></i> My Role:</span>
-                        <span class="role-value">Requirement Gathering &bull; Feature Prioritization &bull; Functional
-                            Validation &bull; UAT Leadership</span>
-                    </div>
-
-                    <div class="case-columns">
-                        <div class="case-block challenge-block">
-                            <h4><i class="fas fa-exclamation-circle"></i> The Challenge</h4>
-                            <ul>
-                                <li>Multi-stakeholder sample lifecycle (onboarding, wet lab, NGS, analysis, review, and
-                                    report release) relied on fragmented spreadsheets and chat apps.</li>
-                                <li>Queries were disconnected from the respective sample record, leaving no centralized
-                                    audit history or traceability.</li>
-                                <li>Earlier-stage stakeholders lacked visibility into downstream review blockers,
-                                    complicating sample revisits.</li>
-                            </ul>
-                        </div>
-                        <div class="case-block solution-block">
-                            <h4><i class="fas fa-lightbulb"></i> Product Solution</h4>
-                            <ul>
-                                <li>Built a centralized contextual chat window natively bound to each sample workflow
-                                    upon onboarding.</li>
-                                <li>Lifecycle-aware visibility tracking sample status progression with role-based
-                                    permissions.</li>
-                                <li>In-thread query management (@mentions, status flags, resolved toggles) and evidence
-                                    sharing (IGV visualization screenshots).</li>
-                            </ul>
-                        </div>
-                        <div class="case-block impact-block">
-                            <h4><i class="fas fa-chart-line"></i> Outcomes &amp; Value</h4>
-                            <ul>
-                                <li>Single source of truth for all sample-related clinical discussions, eliminating
-                                    multi-tool switching.</li>
-                                <li>Complete audit trail retained across the sample lifecycle for regulatory compliance
-                                    and review speed.</li>
-                                <li>Streamlined query resolution and faster turnaround time between wet-lab and
-                                    reporting teams.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="case-tags">
-                        <span class="case-tag">Feature Prioritization</span>
-                        <span class="case-tag">LIMS Integration</span>
-                        <span class="case-tag">Multi-Omics Platform</span>
-                        <span class="case-tag">UAT Leadership</span>
-                        <span class="case-tag">Stakeholder Engagement</span>
-                        <span class="case-tag">Role-Based Access Control</span>
-                    </div>
-
-                    <div class="case-footer">
-                        <button class="btn-deep-dive" data-target="deepdive-1">
-                            <span>Deep Dive Details</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <a href="https://wiggly-ixora-6d9.notion.site/Case-Study-01-Workflow-Management-Contextual-Collaboration-40b9749ef5f480d4b16ac91118b98fe7"
-                            target="_blank" rel="noopener noreferrer" class="btn-notion-link">
-                            <span>View on Notion</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-
-                    <!-- Accordion Content -->
-                    <div class="case-accordion" id="deepdive-1">
-                        <div class="accordion-inner">
-                            <div class="deepdive-section">
-                                <h5><i class="fas fa-route"></i> End-to-End Sample Lifecycle Flow</h5>
-                                <div class="workflow-steps">
-                                    <div class="wf-step"><span class="step-num">1</span><strong>Sample
-                                            Onboarding</strong>
-                                        <p>Sample registered; automated chat window assigned.</p>
-                                    </div>
-                                    <div class="wf-step"><span class="step-num">2</span><strong>Lab Processing</strong>
-                                        <p>Status tracking through running, queued, or failed states.</p>
-                                    </div>
-                                    <div class="wf-step"><span class="step-num">3</span><strong>NGS Readiness</strong>
-                                        <p>Progresses to sequencing-ready and pipeline analysis.</p>
-                                    </div>
-                                    <div class="wf-step"><span class="step-num">4</span><strong>Analysis &amp;
-                                            Reporting</strong>
-                                        <p>Analysts raise queries, tag peers, share IGV data.</p>
-                                    </div>
-                                    <div class="wf-step"><span class="step-num">5</span><strong>Report Review</strong>
-                                        <p>Reviewers inspect threaded discussion and resolution flags.</p>
-                                    </div>
-                                    <div class="wf-step"><span class="step-num">6</span><strong>Report Release</strong>
-                                        <p>Final sign-off retaining full historical context.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="deepdive-section">
-                                <h5><i class="fas fa-vial"></i> Functional Validation &amp; UAT Leadership</h5>
-                                <p>Led User Acceptance Testing (UAT) with wet-lab scientists, bioinformatics analysts,
-                                    and medical reviewers to validate permission boundaries, query notification flows,
-                                    and IGV artifact uploads under high sample volumes.</p>
-                            </div>
-                            <div class="deepdive-section highlight-box">
-                                <h5><i class="fas fa-graduation-cap"></i> Product Management Takeaway</h5>
-                                <p>Demonstrated how to diagnose frontline operational friction across siloed teams and
-                                    translate complex multi-stage laboratory workflows into intuitive, role-governed
-                                    product capabilities that eliminate communication debt.</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Case Study 02 -->
-                <article class="case-study-card" data-category="optimization">
-                    <div class="case-meta-top">
-                        <span class="case-number">Case Study 02</span>
-                        <div class="case-badges">
-                            <span class="case-company-badge"><i class="fas fa-building"></i> 1Cell.Ai</span>
-                            <span class="case-category-badge"><i class="fas fa-dna"></i> Genomics &amp;
-                                Visualization</span>
-                        </div>
-                    </div>
-
-                    <h3 class="case-title">Fusion Analysis Optimization &amp; Visualization</h3>
-                    <p class="case-tagline">Making gene fusion analysis more accurate, biologically interpretable, and
-                        time-efficient within an oncology genomics platform.</p>
-
-                    <div class="case-role-bar">
-                        <span class="role-label"><i class="fas fa-user-check"></i> My Role:</span>
-                        <span class="role-value">Secondary Research &bull; Parameter Evaluation &bull; Threshold
-                            Refinement &bull; UI/UX Visualization Design &bull; Cross-Functional Coordination</span>
-                    </div>
-
-                    <div class="case-columns">
-                        <div class="case-block challenge-block">
-                            <h4><i class="fas fa-exclamation-circle"></i> The Challenge</h4>
-                            <ul>
-                                <li>The legacy fusion detection tool produced an overwhelming volume of false-positive
-                                    candidate fusions, burdening analysts with tedious manual filtering.</li>
-                                <li>Critical biological parameters (exon junctions, reading frame status, orientation)
-                                    were missing from the interface.</li>
-                                <li>Analysts had to manually cross-reference external databases to assess the pathogenic
-                                    significance of fusion events.</li>
-                            </ul>
-                        </div>
-                        <div class="case-block solution-block">
-                            <h4><i class="fas fa-lightbulb"></i> Product Solution</h4>
-                            <ul>
-                                <li>Re-evaluated detection algorithms alongside the CTO and bioinformatics team to
-                                    tighten parameter thresholds and suppress noise.</li>
-                                <li>Redesigned the analyst UI into structured, high-density parameter tiles displaying
-                                    essential metrics at a glance.</li>
-                                <li>Introduced unidirectional and bidirectional orientation indicators, alongside
-                                    interactive exon-level and functional protein-domain diagrams.</li>
-                            </ul>
-                        </div>
-                        <div class="case-block impact-block">
-                            <h4><i class="fas fa-chart-line"></i> Outcomes &amp; Value</h4>
-                            <ul>
-                                <li>Drastically decreased false-positive fusion findings, saving significant review time
-                                    per oncology case.</li>
-                                <li>Transformed dense bioinformatic outputs into clear, visual domain-level and
-                                    exon-level representations.</li>
-                                <li>Accelerated reporting turnaround time (TAT) while enhancing clinical confidence for
-                                    actionable fusions (e.g., ALK, ROS1, RET).</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="case-tags">
-                        <span class="case-tag">Oncology Genomics</span>
-                        <span class="case-tag">Gene Fusion Detection</span>
-                        <span class="case-tag">Data Visualization</span>
-                        <span class="case-tag">Threshold Calibration</span>
-                        <span class="case-tag">Bioinformatics UI</span>
-                        <span class="case-tag">CTO Collaboration</span>
-                    </div>
-
-                    <div class="case-footer">
-                        <button class="btn-deep-dive" data-target="deepdive-2">
-                            <span>Deep Dive Details</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <a href="https://wiggly-ixora-6d9.notion.site/Case-Study-02-Fusion-Analysis-Optimization-Visualization-40b9749ef5f480e49c6ad7621b5f7017"
-                            target="_blank" rel="noopener noreferrer" class="btn-notion-link">
-                            <span>View on Notion</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-
-                    <!-- Accordion Content -->
-                    <div class="case-accordion" id="deepdive-2">
-                        <div class="accordion-inner">
-                            <div class="deepdive-section">
-                                <h5><i class="fas fa-cogs"></i> Technical &amp; Scientific Approach</h5>
-                                <p>Benchmarked existing literature on fusion caller specificity and identified recurring
-                                    false-positive motifs. Formulated parameter cutoff recommendations (split read
-                                    counts, spanning pairs, breakpoint homology) and collaborated directly with
-                                    bioinformatics engineers to implement the pipeline updates.</p>
-                            </div>
-                            <div class="deepdive-section">
-                                <h5><i class="fas fa-eye"></i> Information Architecture &amp; UI Tiles</h5>
-                                <p>Organized candidate fusions into modular visual tiles showing: 5&prime; and 3&prime;
-                                    gene partners, exact chromosomal breakpoints, reading frame retention (in-frame vs
-                                    out-of-frame), preserved tyrosine kinase or catalytic domains, and reciprocal
-                                    orientation.</p>
-                            </div>
-                            <div class="deepdive-section highlight-box">
-                                <h5><i class="fas fa-graduation-cap"></i> Product Management Takeaway</h5>
-                                <p>Demonstrated the ability to bridge deep computational biology with user-centered
-                                    interface design — balancing analytical rigor with frictionless usability to
-                                    directly accelerate clinical turnaround time.</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Case Study 03 -->
-                <article class="case-study-card" data-category="nlp">
-                    <div class="case-meta-top">
-                        <span class="case-number">Case Study 03</span>
-                        <div class="case-badges">
-                            <span class="case-company-badge"><i class="fas fa-building"></i> Strand Life Sciences</span>
-                            <span class="case-category-badge"><i class="fas fa-brain"></i> Healthcare AI &amp;
-                                NLP</span>
-                        </div>
-                    </div>
-
-                    <h3 class="case-title">Biomedical Literature Intelligence Tool</h3>
-                    <p class="case-tagline">Building a natural language processing (NLP) intelligence tool to extract
-                        and connect biomedical entities across oncology and chronic diseases.</p>
-
-                    <div class="case-role-bar">
-                        <span class="role-label"><i class="fas fa-user-check"></i> My Role:</span>
-                        <span class="role-value">Scientific Data Annotation &bull; NLP Model Validation &bull;
-                            Human-in-the-Loop Quality Assurance &bull; Product Usability Inputs</span>
-                    </div>
-
-                    <div class="case-columns">
-                        <div class="case-block challenge-block">
-                            <h4><i class="fas fa-exclamation-circle"></i> The Challenge</h4>
-                            <ul>
-                                <li>Biomedical literature holds massive unstructured knowledge (oncology, women's
-                                    health, diabetes, obesity) that is prohibitively time-consuming to mine manually.
-                                </li>
-                                <li>Early-stage NLP models struggled to reliably identify and link complex medical
-                                    entities (mutations, genes, drugs, phenotypes).</li>
-                                <li>Lack of high-quality, standardized clinical training corpora hindered model
-                                    precision and recall.</li>
-                            </ul>
-                        </div>
-                        <div class="case-block solution-block">
-                            <h4><i class="fas fa-lightbulb"></i> Product Solution</h4>
-                            <ul>
-                                <li>Executed a 3-phase NLP product development framework: Paragraph-level annotation ➔
-                                    Model output verification ➔ UI usability design.</li>
-                                <li>Utilized the BRAT annotation environment to systematically tag entities (biomarkers,
-                                    drugs, diseases, symptoms) and relationship triplets.</li>
-                                <li>Established a human-in-the-loop review pipeline to detect model hallucinations,
-                                    missing relations, and classification discrepancies.</li>
-                            </ul>
-                        </div>
-                        <div class="case-block impact-block">
-                            <h4><i class="fas fa-chart-line"></i> Outcomes &amp; Value</h4>
-                            <ul>
-                                <li>Successfully shipped a functional Beta literature intelligence tool empowering
-                                    researchers to explore entity-relationship graphs.</li>
-                                <li>Substantially improved NLP model training accuracy through rigorous, domain-curated
-                                    scientific annotation sets.</li>
-                                <li>Compressed literature synthesis times for complex clinical variant investigations
-                                    from hours to minutes.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="case-tags">
-                        <span class="case-tag">Natural Language Processing (NLP)</span>
-                        <span class="case-tag">BRAT Annotation Tool</span>
-                        <span class="case-tag">Named Entity Recognition (NER)</span>
-                        <span class="case-tag">Relationship Extraction</span>
-                        <span class="case-tag">Healthcare AI</span>
-                        <span class="case-tag">Human-in-the-Loop QA</span>
-                    </div>
-
-                    <div class="case-footer">
-                        <button class="btn-deep-dive" data-target="deepdive-3">
-                            <span>Deep Dive Details</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <a href="https://wiggly-ixora-6d9.notion.site/Case-Study-03-Biomedical-Literature-Intelligence-Tool-40b9749ef5f48013a5bef96c6c529f78"
-                            target="_blank" rel="noopener noreferrer" class="btn-notion-link">
-                            <span>View on Notion</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-
-                    <!-- Accordion Content -->
-                    <div class="case-accordion" id="deepdive-3">
-                        <div class="accordion-inner">
-                            <div class="deepdive-section">
-                                <h5><i class="fas fa-layer-group"></i> 3-Phase Development Lifecycle</h5>
-                                <div class="workflow-steps">
-                                    <div class="wf-step"><span class="step-num">P1</span><strong>Scientific
-                                            Annotation</strong>
-                                        <p>Paragraph-level tagging of cancer &amp; metabolic disease publications using
-                                            BRAT.</p>
-                                    </div>
-                                    <div class="wf-step"><span class="step-num">P2</span><strong>Verification &amp;
-                                            QA</strong>
-                                        <p>Systematic verification of pre-annotated NLP predictions against
-                                            peer-reviewed ground truth.</p>
-                                    </div>
-                                    <div class="wf-step"><span class="step-num">P3</span><strong>Interface &amp;
-                                            Usability</strong>
-                                        <p>Advocated for interactive search filters and entity graph navigation for
-                                            researchers.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="deepdive-section">
-                                <h5><i class="fas fa-stethoscope"></i> Multi-Disease Scope</h5>
-                                <p>Covered cancer genomics initially, followed by women's health conditions, obesity,
-                                    and diabetes — providing comprehensive semantic tagging across drug indications,
-                                    gene variant mechanisms, and clinical phenotypes.</p>
-                            </div>
-                            <div class="deepdive-section highlight-box">
-                                <h5><i class="fas fa-graduation-cap"></i> Product Management Takeaway</h5>
-                                <p>Hands-on experience navigating the complete lifecycle of an AI healthcare product —
-                                    from high-fidelity ground-truth data curation to human-in-the-loop validation and
-                                    user-centric search interface design.</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Case Study 04 -->
-                <article class="case-study-card" data-category="automation">
-                    <div class="case-meta-top">
-                        <span class="case-number">Case Study 04</span>
-                        <div class="case-badges">
-                            <span class="case-company-badge"><i class="fas fa-building"></i> 1Cell.Ai</span>
-                            <span class="case-category-badge"><i class="fas fa-robot"></i> Variant Automation</span>
-                        </div>
-                    </div>
-
-                    <h3 class="case-title">Automating Clinical Variant Classification &amp; Interpretation</h3>
-                    <p class="case-tagline">Streamlining clinical genomics interpretation by integrating evidence from
-                        ClinGen, VarSome, and GeneBe into an automated classification pipeline.</p>
-
-                    <div class="case-role-bar">
-                        <span class="role-label"><i class="fas fa-user-check"></i> My Role:</span>
-                        <span class="role-value">Product Feature Coordination &bull; Clinical Workflow Optimization
-                            &bull; Evidence-based Classification &bull; ACMG/AMP Rule Mapping</span>
-                    </div>
-
-                    <div class="case-columns">
-                        <div class="case-block challenge-block">
-                            <h4><i class="fas fa-exclamation-circle"></i> The Challenge</h4>
-                            <ul>
-                                <li>Variant interpretation is the primary bottleneck in clinical genomics; analysts must
-                                    evaluate dozens of external knowledge portals per sample.</li>
-                                <li>Repetitive manual lookup across external sites led to cognitive fatigue and
-                                    lengthened reporting turnaround time (TAT).</li>
-                                <li>Risk of inter-analyst discordance when classifying Pathogenic (P) and Likely
-                                    Pathogenic (LP) variants.</li>
-                            </ul>
-                        </div>
-                        <div class="case-block solution-block">
-                            <h4><i class="fas fa-lightbulb"></i> Product Solution</h4>
-                            <ul>
-                                <li>Conceptualized and coordinated an automated variant classification pipeline adhering
-                                    to ACMG/AMP clinical standards.</li>
-                                <li>Integrated live evidence streaming from established resources:
-                                    <strong>ClinGen</strong>, <strong>VarSome</strong>, and <strong>GeneBe</strong>.
-                                </li>
-                                <li>Surfaced pre-computed evidence codes, population allele frequencies, and predictive
-                                    in-silico metrics directly inside the analyst's workspace.</li>
-                            </ul>
-                        </div>
-                        <div class="case-block impact-block">
-                            <h4><i class="fas fa-chart-line"></i> Outcomes &amp; Value</h4>
-                            <ul>
-                                <li>Dramatically curtailed repetitive manual database searches for pathogenic and likely
-                                    pathogenic variants.</li>
-                                <li>Standardized classification criteria across the entire scientific curation team for
-                                    consistent report quality.</li>
-                                <li>Significantly shortened interpretation turnaround time while preserving full
-                                    clinical accountability and oversight.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="case-tags">
-                        <span class="case-tag">ACMG/AMP Guidelines</span>
-                        <span class="case-tag">Clinical Variant Interpretation</span>
-                        <span class="case-tag">ClinGen</span>
-                        <span class="case-tag">VarSome API</span>
-                        <span class="case-tag">GeneBe</span>
-                        <span class="case-tag">Evidence Automation</span>
-                        <span class="case-tag">Cross-Functional Delivery</span>
-                    </div>
-
-                    <div class="case-footer">
-                        <button class="btn-deep-dive" data-target="deepdive-4">
-                            <span>Deep Dive Details</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <a href="https://wiggly-ixora-6d9.notion.site/Case-Study-04-Automating-Clinical-Variant-Classification-Interpretation-40b9749ef5f480f8b7f1e7c01cefd213"
-                            target="_blank" rel="noopener noreferrer" class="btn-notion-link">
-                            <span>View on Notion</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-
-                    <!-- Accordion Content -->
-                    <div class="case-accordion" id="deepdive-4">
-                        <div class="accordion-inner">
-                            <div class="deepdive-section">
-                                <h5><i class="fas fa-database"></i> Multi-Source Evidence Integration</h5>
-                                <p>Harmonized disparate evidentiary criteria from ClinGen expert panels, VarSome ACMG
-                                    automated scoring, and GeneBe variant annotations into a unified, conflict-resolving
-                                    evidence schema presented contextually in the reporting view.</p>
-                            </div>
-                            <div class="deepdive-section">
-                                <h5><i class="fas fa-balance-scale"></i> Balancing Automation with Clinical Oversight
-                                </h5>
-                                <p>Engineered guardrails ensuring automation supports rather than replaces human
-                                    clinical judgment. Analysts retain full override capabilities with mandatory
-                                    rationale documentation for auditable clinical safety.</p>
-                            </div>
-                            <div class="deepdive-section highlight-box">
-                                <h5><i class="fas fa-graduation-cap"></i> Product Management Takeaway</h5>
-                                <p>Exemplified how domain expertise in clinical genetics transforms into high-leverage
-                                    product enhancements — converting fragmented external reference workflows into
-                                    seamless in-app automation that elevates operational scale.</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
+                    <a href="case-studies.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                        <i class="fas fa-book-open"></i> Open Full Case Studies Hub <i class="fas fa-external-link-alt" style="margin-left: 6px; font-size: 0.85rem;"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
