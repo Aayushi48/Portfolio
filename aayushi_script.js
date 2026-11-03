@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
        3. SCROLL REVEAL ANIMATION (IntersectionObserver)
     ------------------------------------------------------- */
     const revealElements = document.querySelectorAll(
-        '.timeline-item, .highlight-card, .skill-card, .project-card, .education-card, .recognition-card'
+        '.timeline-item, .case-study-card, .highlight-card, .skill-card, .project-card, .education-card, .recognition-card'
     );
 
     const revealObserver = new IntersectionObserver((entries) => {
@@ -190,6 +190,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
         card.addEventListener('mouseleave', () => {
             card.style.transform = '';
+        });
+    });
+
+    /* -------------------------------------------------------
+       9. CASE STUDIES — Filter Tabs & Deep Dive Accordion
+    ------------------------------------------------------- */
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const caseCards  = document.querySelectorAll('.case-study-card');
+
+    filterTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            filterTabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            const filterValue = tab.getAttribute('data-filter');
+
+            caseCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filterValue === 'all' || category === filterValue) {
+                    card.classList.remove('hidden');
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(15px)';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 50);
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
+
+    // Deep Dive Accordion Toggle
+    const deepDiveButtons = document.querySelectorAll('.btn-deep-dive');
+
+    deepDiveButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetId = btn.getAttribute('data-target');
+            const accordion = document.getElementById(targetId);
+
+            if (accordion) {
+                const isOpen = accordion.classList.contains('open');
+
+                if (isOpen) {
+                    accordion.classList.remove('open');
+                    btn.classList.remove('active');
+                    btn.querySelector('span').textContent = 'Deep Dive Details';
+                } else {
+                    accordion.classList.add('open');
+                    btn.classList.add('active');
+                    btn.querySelector('span').textContent = 'Collapse Details';
+                }
+            }
         });
     });
 
